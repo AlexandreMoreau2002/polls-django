@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="{% static 'polls/style.css' %}" />
   </head>
   <body>
-    <h1 style="text-align: center">Application de sondage - index page</h1>
+    <h1>Application de sondage - index page</h1>
     {% if latest_question_list %}
-    <ul style="list-style: none">
+    <ul>
       {% for question in latest_question_list %}
       <li>
         <a href="{% url 'polls:detail' question.id %}"
